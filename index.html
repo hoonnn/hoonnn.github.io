@@ -10,5 +10,9 @@
 </html>
 
 <script>
-  console.log($("#target").text());
+  var now = new Date();
+  var then = new Date("2019-09-21 15:00:00"); 
+  var gap = then.getTime() - now.getTime();
+  gap = Math.floor(gap / (1000 * 60 * 60));
+  console.log($("#target").text(gap));
 </script>
