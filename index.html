@@ -6112,6 +6112,11 @@
         $("input:checked").each(function() {
           target.push(Number($(this).val()));
         });
+
+        if (target.length < 6) {
+          alert("6개 이상 선택하세요!");
+          return;
+        }
         console.log("target: " + target);
 
         var choosed = [];
