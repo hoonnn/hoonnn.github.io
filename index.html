@@ -6096,7 +6096,7 @@
         for (var index = 1; index <= 45; index++) {
           var tdHtml = `<td><label><input type="checkbox" value="${index}" checked/>${index}</label></td>`;
           trHtml += tdHtml;
-          if (index % 10 === 0 || index === 45) {
+          if (index % 5 === 0) {
             $("#num").append(`<tr>${trHtml}</tr>`);
             trHtml = "";
           }
